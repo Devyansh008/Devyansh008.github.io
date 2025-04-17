@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devyansh Bhardwaj | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    :root {
+      --primary: #ffffff;
+      --accent: #7f5af0;
+      --background: #0f0f0f;
+      --text: #e0e0e0;
+    }
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      transition: background-color 0.4s, color 0.4s;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .photo {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .photo img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      object-fit: cover;
+    }
+
+    .skills {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .skills h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills span {
+      background: var(--accent);
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .about {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: var(--primary);
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .photo img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+footer {
+  margin-top: 3rem;
+  border-top: 1px solid rgba(127, 90, 240, 0.2); /* subtle accent-colored line */
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Devyansh Bhardwaj 👨‍💻</h1>
+    <p>Code. Learn. Repeat. | Python • HTML • CSS • C • Markdown</p>
+  </header>
+
+  <div class="photo">
+    <img src="photo.jpg" alt="Devyansh's photo" />
+  </div>
+
+  <div class="about">
+    <p>Just another curious soul trying to turn caffeine and code into creativity. Building my way up in tech — one bug at a time 🚀</p>
+  </div>
+
+  <div class="skills">
+    <h2>Skills</h2>
+    <span>Python</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>C</span>
+    <span>Markdown</span>
+  </div>
+
+  <div class="links">
+    <a href="mailto:devyanshb200@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/devyansh-bhardwaj-2ba419360/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/" target="_blank">GitHub</a>
+  </div>
+
+  <footer>
+    <p>© 2024 Devyansh Bhardwaj | Made with ☕ and 💻</p>
+  </footer>
+
+  <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light</button>
+
+  <script>
+    function toggleMode() {
+      const root = document.documentElement;
+      if (root.style.getPropertyValue('--background') === '#0f0f0f') {
+        root.style.setProperty('--background', '#ffffff');
+        root.style.setProperty('--text', '#111111');
+        root.style.setProperty('--primary', '#0f0f0f');
+        root.style.setProperty('--accent', '#6a3093');
+      } else {
+        root.style.setProperty('--background', '#0f0f0f');
+        root.style.setProperty('--text', '#e0e0e0');
+        root.style.setProperty('--primary', '#ffffff');
+        root.style.setProperty('--accent', '#7f5af0');
+      }
+    }
+  </script>
+<footer style="text-align: center; padding: 1rem; opacity: 0.7; font-size: 0.9rem;">
+  <p>
+    This portfolio was created with the assistance of 
+    <a href="https://deepseek.com" target="_blank" style="color: var(--accent);">DeepSeek AI</a> 
+    and 
+    <a href="https://openai.com/chatgpt" target="_blank" style="color: var(--accent);">ChatGPT-4</a>. 
+    Credit goes to their incredible generative AI technology.
+  </p>
+</footer>
+<footer>
+  <p>
+    Made with help from 
+    <a href="https://deepseek.com" target="_blank">🤖 DeepSeek AI</a> 
+    + 
+    <a href="https://openai.com/chatgpt" target="_blank">🧠 ChatGPT-4</a>
+  </p>
+</footer>
+</body>
+</html>
