@@ -1,2 +1,2 @@
 This is my digital portfolio (temporary), nothing much but gonna upgrade it block by block.
-With the help of 2 AIs- ChatGpt and Deepseek.
+I have created it with the help of 2 AIs- ChatGpt and Deepseek.
